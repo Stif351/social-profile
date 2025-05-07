@@ -1,1 +1,97 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(0, 0%, 8%);
+  --second-color: hsl(0, 0%, 12%);
+  --link-button-color: hsl(0, 0%, 20%);
+  --text-color: hsl(0, 0%, 100%);
+  --active-button: hsl(75, 94%, 57%);
+  --text-paragraph: 14px;
+}
+
+@font-face {
+  font-family: Iner;
+  src: url(https://fonts.google.com/specimen/Inter);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+.container {
+  
+  background: var(--second-color);
+  width: 350px;
+  /* height: 554px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 40px;
+
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-family: Iner;
+  font-size: var(--text-paragraph);
+}
+
+img {
+    width: 50%;
+  border-radius: 50%;
+}
+h1{
+    font-size: 24px;
+    margin-top: 36px;
+}
+
+.country{
+    color: var(--active-button);
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+.btn-m {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 28px;
+}
+.btn {
+  width: 275px;
+  height: 44px;
+  background: var(--link-button-color);
+  border-radius: 10px;
+}
+
+.btn:hover {
+    background: var(--active-button);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
