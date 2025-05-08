@@ -66,8 +66,8 @@ h1{
 
 .country{
     color: var(--active-button);
-    margin-top: 20px;
-    margin-bottom: 36px;
+    margin-top: 5px;
+    margin-bottom: 28px;
 }
 
 .btn-m {
@@ -80,18 +80,27 @@ h1{
   width: 275px;
   height: 44px;
   background: var(--link-button-color);
+  border: none;
   border-radius: 10px;
+  color: var(--text-color);
+  font-family: Iner;
+  font-size: var(--text-paragraph);
+  font-weight: 700;
 }
 
 .btn:hover {
     background: var(--active-button);
+    color: black;
+    font-weight: 900;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
   margin-top: 50px;
+  color: var(--text-color);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  
 }
